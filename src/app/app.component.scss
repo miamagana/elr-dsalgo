@@ -1,0 +1,11 @@
+p {
+  font-family: Lato;
+}
+
+.link-row {
+  display: flex;
+  flex-direction: row;
+  > a {
+    margin-right: 1rem;
+  }
+}
