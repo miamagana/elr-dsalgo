@@ -1,15 +1,15 @@
-<mat-tab-group mat-align-tabs="start">
-  <mat-tab label="Home">
+<mat-tab-group mat-align-tabs="start" mat-stretch-tabs *transloco="let t">
+  <mat-tab [label]="t('tabs.home')">
     <ng-template matTabContent>
       <app-home></app-home>
     </ng-template>
   </mat-tab>
-  <mat-tab label="Why?">
+  <mat-tab [label]="t('tabs.motivation')">
     <ng-template matTabContent>
       <app-about></app-about>
     </ng-template>
   </mat-tab>
-  <mat-tab label="Course">
+  <mat-tab [label]="t('tabs.course')">
     <ng-template matTabContent>
       <app-course></app-course>
     </ng-template>

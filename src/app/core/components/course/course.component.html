@@ -1,1 +1,24 @@
-<p>course works!</p>
+<mat-stepper [orientation]="(stepperOrientation | async)!">
+  <mat-step>
+    <ng-template matStepLabel>Intro</ng-template>
+    <ng-template matStepContent>
+      <p>This content was rendered lazily</p>
+      <button mat-button matStepperNext>Next</button>
+    </ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Step 2</ng-template>
+    <ng-template matStepContent>
+      <p>This content was also rendered lazily</p>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Step 3</ng-template>
+    <ng-template matStepContent>
+      <p>This content was rendered lazyly as well</p>
+      <button mat-button matStepperPrevious>Back</button>
+    </ng-template>
+  </mat-step>
+</mat-stepper>
