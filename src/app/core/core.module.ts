@@ -4,12 +4,14 @@ import { HeaderComponent } from './components/header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatCardModule } from '@angular/material/card';
 import { AppComponent } from './components/main/app.component';
 import { TranslocoRootModule } from '../transloco-root.module';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { CourseComponent } from './components/course/course.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { CourseComponent } from './components/course/course.component';
     HomeComponent,
     AboutComponent,
     CourseComponent,
+    CardComponent,
   ],
   imports: [
     CommonModule,
@@ -26,6 +29,7 @@ import { CourseComponent } from './components/course/course.component';
     MatToolbarModule,
     MatTabsModule,
     MatStepperModule,
+    MatCardModule,
   ],
 })
 export class CoreModule {}

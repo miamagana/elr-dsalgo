@@ -2,4 +2,27 @@
   <div class="img-container">
     <img src="/assets/faang.jpg" loading="lazy" />
   </div>
+  <div class="grid">
+    <app-card
+      [title]="'motivation.first.title'"
+      [subTitle]="'motivation.first.subtitle'"
+      [text]="'motivation.first.text'"
+      [img]="'/assets/objectives.png'"
+      [headerImg]="'/assets/target.png'"
+    ></app-card>
+    <app-card
+      [title]="'motivation.second.title'"
+      [subTitle]="'motivation.second.subtitle'"
+      [text]="'motivation.second.text'"
+      [img]="'/assets/process.jpg'"
+      [headerImg]="'/assets/process.png'"
+    ></app-card>
+    <app-card
+      [title]="'motivation.third.title'"
+      [subTitle]="'motivation.third.subtitle'"
+      [text]="'motivation.third.text'"
+      [img]="'/assets/success.jpg'"
+      [headerImg]="'/assets/success-icon.jpg'"
+    ></app-card>
+  </div>
 </div>

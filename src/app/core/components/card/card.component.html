@@ -1,0 +1,18 @@
+<mat-card class="content-card" *transloco="let t">
+  <mat-card-header>
+    <img
+      mat-card-avatar
+      loading="lazy"
+      class="header-image"
+      [src]="headerImg"
+    />
+    <mat-card-title>{{ t(title) }}</mat-card-title>
+    <mat-card-subtitle>{{ t(subTitle) }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image loading="lazy" [src]="img" />
+  <mat-card-content>
+    <p>
+      {{ t(text) }}
+    </p>
+  </mat-card-content>
+</mat-card>

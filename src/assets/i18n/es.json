@@ -4,5 +4,22 @@
     "home": "Inicio",
     "motivation": "Motivación",
     "course": "Contenidos"
+  },
+  "motivation": {
+    "first": {
+      "title": "Objective",
+      "subtitle": "Be among the bests",
+      "text": "These companies are the biggest product driven tech companies in the world."
+    },
+    "second": {
+      "title": "Process",
+      "subtitle": "Tough but pays off",
+      "text": "The greatest companies will hire based on potential, which will need to be assessed during the interview process."
+    },
+    "third": {
+      "title": "Success",
+      "subtitle": "Great benefits, progression and salary!",
+      "text": "This potential is 99% of the times measured using algorithmic problems, that will let the interviewer know how the candidate approaches problems."
+    }
   }
 }

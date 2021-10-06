@@ -1,4 +1,10 @@
-<mat-tab-group mat-align-tabs="start" mat-stretch-tabs *transloco="let t">
+<mat-tab-group
+  mat-align-tabs="start"
+  dynamicHeight
+  mat-stretch-tabs
+  [headerPosition]="(headerPosition$ | async)!"
+  *transloco="let t"
+>
   <mat-tab [label]="t('tabs.home')">
     <ng-template matTabContent>
       <app-home></app-home>

@@ -1,0 +1,13 @@
+.content-card {
+  height: min-content;
+  -webkit-box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.48);
+  box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.48);
+  background-color: rgb(66 195 239 / 23%);
+
+  .header-image {
+    background-size: cover;
+  }
+  p {
+    font-size: larger;
+  }
+}
