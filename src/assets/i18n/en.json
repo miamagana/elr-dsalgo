@@ -5,6 +5,9 @@
     "motivation": "Motivation",
     "course": "Content"
   },
+  "home": {
+    "title": "Data Structures and Algorithms"
+  },
   "motivation": {
     "first": {
       "title": "Objective",
