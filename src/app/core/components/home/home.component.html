@@ -1,6 +1,5 @@
 <div class="main" *transloco="let t">
   <header
-    _ngcontent-dfd-c70=""
     focusonnavigation=""
     aria-label="Get started"
     id="homepage-header"
@@ -8,15 +7,27 @@
     tabindex="-1"
     style="outline: none;"
   >
-    <div class="docs-header-section">
+    <div class="docs-header-section" *transloco="let t">
       <div class="docs-header-headline">
-        <h1 class="mat-h1"><p>Course on</p><p>Data Structures and Algorithms</p></h1>
-        <h2>Your future starts here</h2>
+        <h1 class="mat-h1">
+          <p>{{ t("home.title1") }}</p>
+          <p>{{ t("home.title2") }}</p>
+        </h1>
+        <h2>{{ t("home.subtitle") }}</h2>
       </div>
-      <div _ngcontent-dfd-c70="" class="docs-header-start">
+      <div class="docs-header-start">
         <a
-          _ngcontent-dfd-c70=""
           mat-raised-button=""
+          color="primary"
+          class="
+            mat-focus-indicator mat-raised-button mat-button-base mat-primary
+          "
+        >
+          <span class="mat-button-wrapper">Continue</span
+          ><span matripple="" class="mat-ripple mat-button-ripple"></span
+          ><span class="mat-button-focus-overlay"></span>
+          </a>
+        <!-- <a
           routerlink="/guide/getting-started"
           class="
             mat-focus-indicator
@@ -29,7 +40,7 @@
           ><span class="mat-button-wrapper">Get started</span
           ><span matripple="" class="mat-ripple mat-button-ripple"></span
           ><span class="mat-button-focus-overlay"></span
-        ></a>
+        ></a> -->
       </div>
     </div>
   </header>

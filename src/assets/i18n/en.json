@@ -6,7 +6,9 @@
     "course": "Content"
   },
   "home": {
-    "title": "Data Structures and Algorithms"
+    "title1" : "Course On",
+    "title2": "Data Structures and Algorithms",
+    "subtitle": "Your future starts here"
   },
   "motivation": {
     "first": {

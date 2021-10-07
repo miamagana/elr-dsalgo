@@ -5,6 +5,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { AppComponent } from './components/main/app.component';
 import { TranslocoRootModule } from '../transloco-root.module';
 import { TabsComponent } from './components/tabs/tabs.component';
@@ -30,6 +32,8 @@ import { CardComponent } from './components/card/card.component';
     MatTabsModule,
     MatStepperModule,
     MatCardModule,
+    MatButtonModule,
+    MatIconModule
   ],
 })
 export class CoreModule {}
