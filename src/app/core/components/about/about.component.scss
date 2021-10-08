@@ -11,6 +11,11 @@
     }
   }
 
+  .video {
+    margin-bottom: 3rem;
+    padding: 1rem;
+  }
+
   > .grid {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -30,6 +35,15 @@
       column-gap: 25px;
 
       justify-items: center;
+    }
+    .video {
+      margin-bottom: 5rem;
+      width: fit-content;
+      height: fit-content;
+      iframe {
+        height: 25rem;
+        width: 40rem;
+      }
     }
   }
   .img-container {
