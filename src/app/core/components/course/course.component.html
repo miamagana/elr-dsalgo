@@ -6,7 +6,14 @@
   <mat-step>
     <ng-template matStepLabel>{{ t("course.first.title") }}</ng-template>
     <ng-template matStepContent>
-      <p>Lorem ipsum</p>
+      <h1>{{ t("course.first.title1") }}</h1>
+      <h2>{{ t("course.first.learningObjsTitle") }}:</h2>
+      <mat-list>
+        <mat-list-item><mat-icon matListIcon>done</mat-icon> {{ t("course.first.obj1") }} </mat-list-item>
+        <mat-list-item><mat-icon matListIcon>done</mat-icon> {{ t("course.first.obj2") }} </mat-list-item>
+        <mat-list-item><mat-icon matListIcon>done</mat-icon> {{ t("course.first.obj3") }} </mat-list-item>
+      </mat-list>
+      <h2>{{ t("course.first.soundsGood") }}</h2>
       <button mat-raised-button color="primary" matStepperNext>
         {{ t("course.buttons.next") }}
       </button>
@@ -29,7 +36,7 @@
   <mat-step>
     <ng-template matStepLabel>{{ t("course.third.title") }}</ng-template>
     <ng-template matStepContent>
-      <p>This content was rendered lazyly as well</p>
+      <p>This content was also rendered lazily</p>
       <div class="button-row">
         <button mat-stroked-button color="primary" matStepperPrevious>
           {{ t("course.buttons.previous") }}
@@ -42,6 +49,20 @@
   </mat-step>
   <mat-step>
     <ng-template matStepLabel>{{ t("course.fourth.title") }}</ng-template>
+    <ng-template matStepContent>
+      <p>This content was rendered lazyly as well</p>
+      <div class="button-row">
+        <button mat-stroked-button color="primary" matStepperPrevious>
+          {{ t("course.buttons.previous") }}
+        </button>
+        <button mat-raised-button color="primary" matStepperNext>
+          {{ t("course.buttons.next") }}
+        </button>
+      </div>
+    </ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>{{ t("course.fifth.title") }}</ng-template>
     <ng-template matStepContent>
       <p>This content was rendered lazyly as well</p>
       <button mat-stroked-button color="primary" matStepperPrevious>

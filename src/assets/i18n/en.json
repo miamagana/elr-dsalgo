@@ -32,16 +32,23 @@
     "first": {
       "title": "Introduction",
       "title1": "Welcome!",
-      "learningObjsTitle": "In this course you will learn"
+      "learningObjsTitle": "At the end of this course you will be able to",
+      "obj1": "Understand basic data structures and how data is organized in the real world.",
+      "obj2": "Design low complexity algorithms.",
+      "obj3": "Analyze the efficiency of different algorithms.",
+      "soundsGood": "Sounds good, right?"
     },
     "second": {
-      "title": "Algorithm Analysis"
+      "title": "Data Structures"
     },
     "third": {
-      "title": "Sorting Algorithms"
+      "title": "Basic Algorithms"
     },
     "fourth": {
-      "title": "Basic Algorithms"
+      "title": "Algorithm Analysis"
+    },
+    "fifth": {
+      "title": "Sorting Algorithms"
     },
     "buttons": {
       "next": "Next",

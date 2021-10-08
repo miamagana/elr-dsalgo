@@ -8,6 +8,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 import { AppComponent } from './components/main/app.component';
 import { TranslocoRootModule } from '../transloco-root.module';
 import { TabsComponent } from './components/tabs/tabs.component';
@@ -47,6 +48,7 @@ const routes = [
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
+    MatListModule
   ],
 })
 export class CoreModule {}
