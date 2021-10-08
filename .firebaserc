@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "dsalgo-elr": {
+      "hosting": {
+        "elr-dsalgo": [
+          "dsalgo-elr"
+        ]
+      }
+    }
+  }
+}
