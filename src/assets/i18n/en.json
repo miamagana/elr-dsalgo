@@ -30,7 +30,9 @@
   },
   "course": {
     "first": {
-      "title": "Introduction"
+      "title": "Introduction",
+      "title1": "Welcome!",
+      "learningObjsTitle": "In this course you will learn"
     },
     "second": {
       "title": "Algorithm Analysis"
