@@ -1,0 +1,12 @@
+.spacer {
+  flex: 1 1 auto;
+}
+span {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  span {
+    font-size: 0.85rem;
+  }
+}

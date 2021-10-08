@@ -6,6 +6,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { AppComponent } from './components/main/app.component';
 import { TranslocoRootModule } from '../transloco-root.module';
@@ -14,6 +15,15 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { CourseComponent } from './components/course/course.component';
 import { CardComponent } from './components/card/card.component';
+import { RouterModule } from '@angular/router';
+
+const routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
+  { path: 'home', component: HomeComponent },
+  { path: 'motivation', component: AboutComponent },
+  { path: 'course', component: CourseComponent },
+  { path: '**', redirectTo: 'home' },
+];
 
 @NgModule({
   declarations: [
@@ -27,13 +37,16 @@ import { CardComponent } from './components/card/card.component';
   ],
   imports: [
     CommonModule,
+    RouterModule.forRoot(routes),
     TranslocoRootModule,
     MatToolbarModule,
     MatTabsModule,
     MatStepperModule,
     MatCardModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
+    MatMenuModule,
   ],
 })
 export class CoreModule {}

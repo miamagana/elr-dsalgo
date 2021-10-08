@@ -3,21 +3,24 @@
   dynamicHeight
   mat-stretch-tabs
   [headerPosition]="(headerPosition$ | async)!"
+  (selectedIndexChange)="navigate($event)"
+  [selectedIndex]="activeIndex"
+  animationDuration="0ms"
   *transloco="let t"
 >
   <mat-tab [label]="t('tabs.home')">
     <ng-template matTabContent>
-      <app-home></app-home>
+      <router-outlet></router-outlet>
     </ng-template>
   </mat-tab>
   <mat-tab [label]="t('tabs.motivation')">
     <ng-template matTabContent>
-      <app-about></app-about>
+      <router-outlet></router-outlet>
     </ng-template>
   </mat-tab>
   <mat-tab [label]="t('tabs.course')">
     <ng-template matTabContent>
-      <app-course></app-course>
+      <router-outlet></router-outlet>
     </ng-template>
   </mat-tab>
 </mat-tab-group>

@@ -1,47 +1,10 @@
 <div class="main" *transloco="let t">
-  <header
-    focusonnavigation=""
-    aria-label="Get started"
-    id="homepage-header"
-    class="docs-header-background"
-    tabindex="-1"
-    style="outline: none;"
-  >
-    <div class="docs-header-section" *transloco="let t">
-      <div class="docs-header-headline">
-        <h1 class="mat-h1">
-          <p>{{ t("home.title1") }}</p>
-          <p>{{ t("home.title2") }}</p>
-        </h1>
-        <h2>{{ t("home.subtitle") }}</h2>
-      </div>
-      <div class="docs-header-start">
-        <a
-          mat-raised-button=""
-          color="primary"
-          class="
-            mat-focus-indicator mat-raised-button mat-button-base mat-primary
-          "
-        >
-          <span class="mat-button-wrapper">Continue</span
-          ><span matripple="" class="mat-ripple mat-button-ripple"></span
-          ><span class="mat-button-focus-overlay"></span>
-          </a>
-        <!-- <a
-          routerlink="/guide/getting-started"
-          class="
-            mat-focus-indicator
-            docs-button
-            mat-raised-button mat-button-base
-          "
-          tabindex="0"
-          aria-disabled="false"
-          href="/guide/getting-started"
-          ><span class="mat-button-wrapper">Get started</span
-          ><span matripple="" class="mat-ripple mat-button-ripple"></span
-          ><span class="mat-button-focus-overlay"></span
-        ></a> -->
-      </div>
-    </div>
-  </header>
+  <div>
+    <h1>{{ t("home.title1") }}</h1>
+    <h1>{{ t("home.title2") }}</h1>
+    <h2>{{ t("home.subtitle") }}</h2>
+    <button mat-raised-button color="primary" (click)="navigate()">
+      <span>{{ t("home.button") }}</span>
+    </button>
+  </div>
 </div>

@@ -1,3 +1,16 @@
 <mat-toolbar color="primary" *transloco="let t">
-  <span>{{ t("title") }}</span>
+  <span class="title">{{ t("title") }}</span>
+  <span class="spacer"></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon [svgIcon]="activeLang"></mat-icon>
+  </button>
 </mat-toolbar>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="changeLanguage('es')">
+    <mat-icon svgIcon="es"></mat-icon>
+  </button>
+  <button mat-menu-item (click)="changeLanguage('en')">
+    <mat-icon svgIcon="en"></mat-icon>
+  </button>
+</mat-menu>
