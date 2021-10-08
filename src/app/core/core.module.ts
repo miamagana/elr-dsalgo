@@ -48,7 +48,6 @@ const routes = [
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
-    MatListModule
   ],
 })
 export class CoreModule {}

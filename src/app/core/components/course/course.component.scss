@@ -3,6 +3,23 @@ $tabs-height: 49px;
 
 .main {
   height: calc(100vh - #{$header-height} - #{$tabs-height});
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    > div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 1rem;
+      > mat-icon {
+        margin-right: 1rem;
+        color: green;
+      }
+    }
+  }
 }
 
 .button-row {
@@ -16,5 +33,15 @@ $tabs-height: 49px;
   $header-height: 56px;
   .main {
     height: calc(100vh - #{$header-height} - #{$tabs-height});
+
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+    .list > div {
+      justify-content: space-between;
+    }
   }
 }

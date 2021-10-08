@@ -8,11 +8,20 @@
     <ng-template matStepContent>
       <h1>{{ t("course.first.title1") }}</h1>
       <h2>{{ t("course.first.learningObjsTitle") }}:</h2>
-      <mat-list>
-        <mat-list-item><mat-icon matListIcon>done</mat-icon> {{ t("course.first.obj1") }} </mat-list-item>
-        <mat-list-item><mat-icon matListIcon>done</mat-icon> {{ t("course.first.obj2") }} </mat-list-item>
-        <mat-list-item><mat-icon matListIcon>done</mat-icon> {{ t("course.first.obj3") }} </mat-list-item>
-      </mat-list>
+      <div class="list">
+        <div>
+          <mat-icon matListIcon>done</mat-icon>
+          <span>{{ t("course.first.obj1") }}</span>
+        </div>
+        <div>
+          <mat-icon matListIcon>done</mat-icon>
+          <span>{{ t("course.first.obj2") }}</span>
+        </div>
+        <div>
+          <mat-icon matListIcon>done</mat-icon>
+          <span>{{ t("course.first.obj3") }}</span>
+        </div>
+      </div>
       <h2>{{ t("course.first.soundsGood") }}</h2>
       <button mat-raised-button color="primary" matStepperNext>
         {{ t("course.buttons.next") }}
