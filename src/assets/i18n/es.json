@@ -1,5 +1,5 @@
 {
-  "title": "Bienvenido al curso de EDA para principiantes!",
+  "title": "Bienvenido al curso de Algoritmia para principiantes!",
   "tabs": {
     "home": "Inicio",
     "motivation": "Motivación",
@@ -26,6 +26,24 @@
       "title": "Éxito",
       "subtitle": "¡Grandes beneficios, progreso y salario!",
       "text": "Este potencial se mide el 99% de las veces mediante resolución de problemas y algoritmos."
+    }
+  },
+  "course": {
+    "first": {
+      "title": "Introducción"
+    },
+    "second": {
+      "title": "Análisis de Algoritmos"
+    },
+    "third": {
+      "title": "Algoritmos de Ordenación"
+    },
+    "fourth": {
+      "title": "Algoritmos Básicos"
+    },
+    "buttons": {
+      "next": "Siguiente",
+      "previous": "Anterior"
     }
   }
 }

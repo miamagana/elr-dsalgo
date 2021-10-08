@@ -1,24 +1,52 @@
-<mat-stepper [orientation]="(stepperOrientation | async)!">
+<mat-stepper
+  class="main"
+  [orientation]="(stepperOrientation | async)!"
+  *transloco="let t"
+>
   <mat-step>
-    <ng-template matStepLabel>Intro</ng-template>
+    <ng-template matStepLabel>{{ t("course.first.title") }}</ng-template>
     <ng-template matStepContent>
-      <p>This content was rendered lazily</p>
-      <button mat-button matStepperNext>Next</button>
+      <p>Lorem ipsum</p>
+      <button mat-raised-button color="primary" matStepperNext>
+        {{ t("course.buttons.next") }}
+      </button>
     </ng-template>
   </mat-step>
   <mat-step>
-    <ng-template matStepLabel>Step 2</ng-template>
+    <ng-template matStepLabel>{{ t("course.second.title") }}</ng-template>
     <ng-template matStepContent>
       <p>This content was also rendered lazily</p>
-      <button mat-button matStepperPrevious>Back</button>
-      <button mat-button matStepperNext>Next</button>
+      <div class="button-row">
+        <button mat-stroked-button color="primary" matStepperPrevious>
+          {{ t("course.buttons.previous") }}
+        </button>
+        <button mat-raised-button color="primary" matStepperNext>
+          {{ t("course.buttons.next") }}
+        </button>
+      </div>
     </ng-template>
   </mat-step>
   <mat-step>
-    <ng-template matStepLabel>Step 3</ng-template>
+    <ng-template matStepLabel>{{ t("course.third.title") }}</ng-template>
     <ng-template matStepContent>
       <p>This content was rendered lazyly as well</p>
-      <button mat-button matStepperPrevious>Back</button>
+      <div class="button-row">
+        <button mat-stroked-button color="primary" matStepperPrevious>
+          {{ t("course.buttons.previous") }}
+        </button>
+        <button mat-raised-button color="primary" matStepperNext>
+          {{ t("course.buttons.next") }}
+        </button>
+      </div>
+    </ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>{{ t("course.fourth.title") }}</ng-template>
+    <ng-template matStepContent>
+      <p>This content was rendered lazyly as well</p>
+      <button mat-stroked-button color="primary" matStepperPrevious>
+        {{ t("course.buttons.previous") }}
+      </button>
     </ng-template>
   </mat-step>
 </mat-stepper>

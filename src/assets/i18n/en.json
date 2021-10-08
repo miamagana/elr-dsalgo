@@ -1,5 +1,5 @@
 {
-  "title": "Welcome to DS and Algo for begginers!",
+  "title": "Welcome to DS and Algo for beginners!",
   "tabs": {
     "home": "Home",
     "motivation": "Motivation",
@@ -26,6 +26,24 @@
       "title": "Success",
       "subtitle": "Great benefits, progression and salary!",
       "text": "This potential is 99% of the times measured using algorithmic problems, that will let the interviewer know how the candidate approaches problems."
+    }
+  },
+  "course": {
+    "first": {
+      "title": "Introduction"
+    },
+    "second": {
+      "title": "Algorithm Analysis"
+    },
+    "third": {
+      "title": "Sorting Algorithms"
+    },
+    "fourth": {
+      "title": "Basic Algorithms"
+    },
+    "buttons": {
+      "next": "Next",
+      "previous": "Previous"
     }
   }
 }
